@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projeto Final"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça login para continuar"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone"
+            android:textSize="14sp"
+            android:textColor="@color/gray_700"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="+55 (11) 12345-6789"
+            android:textSize="12dp"
+            android:inputType="phone"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <Button
+            android:id="@+id/btnEnviarCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Enviar código"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/botao_redondo"
+            android:layout_marginBottom="32dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_300"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            android:id="@+id/tvCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código de verificação"
+            android:textSize="14dp"
+            android:textColor="@color/gray_700"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Digite o código de verificação"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnVerifaCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Verificar código"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/botao_redondo"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
