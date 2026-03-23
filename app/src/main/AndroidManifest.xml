@@ -29,7 +29,7 @@
         <activity android:name=".view.CarMapaActivity"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaRyBhyVXjVROTMyXhbHEivA_OVJ8Phgf1Fas"/>
+            android:value=""/>
     </application>
 
 </manifest>
