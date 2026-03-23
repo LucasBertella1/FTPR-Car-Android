@@ -29,20 +29,16 @@ class LoginActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        //Para iniciar o firebase authenticator
         auth = FirebaseAuth.getInstance()
 
-        //verificando se o usuário está logado
         if(auth.currentUser != null) {
             //usuário está logado
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
 
-        //Inicializando as views
         iniciandoViews()
 
-        //Configurando os listeners
         configurandoListeners()
 
         val btnSair = findViewById<Button>(R.id.btnSair)
@@ -59,6 +55,7 @@ class LoginActivity: AppCompatActivity() {
         etCodigo = findViewById(R.id.etCodigo)
         btnVerificaCodigo = findViewById(R.id.btnVerifaCodigo)
 
+        //Para testes 
         etTelefone.setText("+5511912345678")
         etCodigo.setText("123456")
     }
